@@ -1,10 +1,10 @@
-import React from 'react';
 import './assets/css/style.min.css';
+import AuthPage from './components/page/auth-page/AuthPage';
 
 function App() {
   return (
-    <div className="App">
-      Test
+    <div className="app">
+      <AuthPage />
     </div>
   );
 }
