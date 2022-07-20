@@ -38,15 +38,15 @@ const AuthForm: FC = () => {
                     label={column.placeholder}
                     required={column.required}
                     type={column.type}
-                    sx={{ m: 1, minWidth: 235 }}
+                    sx={{ m: 0, minWidth: 235 }}
                     variant="standard"
                   />
                 ))}
               </div>
 
               <div className="auth-form__item">
-                <FormControl sx={{ m: 1, minWidth: 235 }}>
-                  <InputLabel id="demo-simple-select-label">Nationality</InputLabel>
+                <FormControl sx={{ m: 0, minWidth: 234 }}>
+                  <InputLabel id="demo-simple-select-label" sx={{ m: 0 }}>Nationality</InputLabel>
                   <Field name="nationality" component={FormikSelect}>
                     <MenuItem value="american">American</MenuItem>
                     <MenuItem value="russian">Russian</MenuItem>
@@ -54,7 +54,7 @@ const AuthForm: FC = () => {
                   </Field>
                 </FormControl>
 
-                <Field type="email" name="email" sx={{ m: 1, minWidth: 235 }} component={TextField} label="E-mail" required variant="standard" />
+                <Field type="email" name="email" sx={{ m: 0, minWidth: 235 }} component={TextField} label="E-mail" required variant="standard" />
               </div>
 
               <div className="auth-form__item">
@@ -77,7 +77,7 @@ const AuthForm: FC = () => {
                     label={column.placeholder}
                     required={column.required}
                     type={column.type}
-                    sx={{ m: 1, minWidth: 235 }}
+                    sx={{ m: 0, minWidth: 235 }}
                     variant="standard"
                   />
                 ))}

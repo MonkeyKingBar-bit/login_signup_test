@@ -1,30 +1,27 @@
 @import "../abstracts/variables";
 
 .auth-form {
-  width: 80%;
-  height: 100%;
   padding: 39px 22px 33px 21px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #111111;
   background:$light;
   &__title {
-        font-size: 22px;
-        line-height: 26px;
-        letter-spacing: -0.46px;
-      }
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.46px;
+  }
   &__subtitle {
-        font-size: 0.875rem;
-        line-height: 16px;
-      }
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 16px;
+  }
   &__items {
-    margin-top: 20px;
-    padding: 0;
-    column-gap: 16px;
-    row-gap: 5px;
+    width: 100%;
+    margin-top: 4px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   &__item {
     margin: 16px 0;

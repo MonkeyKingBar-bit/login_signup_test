@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const LeftContent: FC = () => (
   <div className="left-content">
-    lefe
+    <p className="left-content__title">Sign up</p>
   </div>
 );
 

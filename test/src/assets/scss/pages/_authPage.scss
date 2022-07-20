@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 
 .auth-page {
-  height: 100%;
+  height: inherit;
   padding: 60px 68px;
   display: flex;
   flex-direction: row;
@@ -11,8 +11,18 @@
 }
 
 .left-content {
-  width: 30%;
-  height: 100%;
   display: flex;
   background-color: $soft-blue;
+  &__title {
+    margin: 288px 6px 22px 68px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    color: $light;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
 }
