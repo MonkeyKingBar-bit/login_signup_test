@@ -1,32 +1,47 @@
+@import "../abstracts/variables";
+
 .auth-form {
-  height: 100vh;
-  background: #fff;
-  padding: 20px;
+  width: 80%;
+  height: 100%;
+  padding: 39px 22px 33px 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #111111;
+  background:$light;
   &__title {
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: -0.46px;
-  }
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: -0.46px;
+      }
   &__subtitle {
-    font-size: 0.875rem;
-    line-height: 16px;
+        font-size: 0.875rem;
+        line-height: 16px;
+      }
+  &__items {
+    margin-top: 20px;
+    padding: 0;
+    column-gap: 16px;
+    row-gap: 5px;
   }
-  &__form {
-    max-width: 360px;
-  }
-  &__keep-logged-in {
+  &__item {
+    margin: 16px 0;
     display: flex;
-    justify-content: flex-start;
-    margin-top: 8px;
-    margin-bottom: 16px;
+    column-gap: 13px;
+    align-items: center;
+    justify-content: space-between;
+    &-select {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
-  &__footer {
-    margin-top: 8px;
+  &__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
   }
 }
